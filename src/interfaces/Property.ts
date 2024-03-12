@@ -1,4 +1,4 @@
-interface PropertyType {
+type PropertyType = {
   _id?: string;
   city: string;
   country: string;
@@ -19,5 +19,10 @@ interface PropertyType {
   images: string[];
   favourited?: boolean;
 }
+
+//difference between interface and type is that type is extendable and interfaces are not
+// type MansionType = {
+//   cinemaRooms: number;
+// } & PropertyType;
 
 export default PropertyType;
