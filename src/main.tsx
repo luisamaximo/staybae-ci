@@ -10,9 +10,10 @@ import { FavouriteContextProvider } from './context/FavouritesContext';
 const siteBaseName =
   process.env.NODE_ENV !== 'development' ? '/staybae-ci/' : '/';
 
-const mockWorkerUrl = process.env.NODE_ENV !== 'development'
-? '/staybae-ci/mockServiceWorker.js'
-: '/mockServiceWorker.js',
+const mockWorkerUrl =
+  process.env.NODE_ENV !== 'development'
+    ? '/staybae-ci/mockServiceWorker.js'
+    : '/mockServiceWorker.js';
 
 async function enableMocking() {
   // if (process.env.NODE_ENV !== 'development') {
