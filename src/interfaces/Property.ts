@@ -18,7 +18,7 @@ type PropertyType = {
   heroImg: string;
   images: string[];
   favourited?: boolean;
-}
+};
 
 //difference between interface and type is that type is extendable and interfaces are not
 // type MansionType = {
