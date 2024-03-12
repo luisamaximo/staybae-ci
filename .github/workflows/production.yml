@@ -85,7 +85,6 @@ jobs:
           push: true
           tags: luisamaximo/staybae-ci-cd:${{steps.build_version.outputs.new_tag}}
 
-  # Deploy Job
   deploy:
     needs: [build]
     environment:
